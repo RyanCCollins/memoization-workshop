@@ -5,8 +5,10 @@ import { BrokerageType, fetchBrokerages } from '../../../utils';
 
 export function Memoized() {
   const [brokerages, setBrokerages] = useState<any>([]);
+  const [called, setCalled] = useState(false)
   useEffect(() => {
-    if (brokerages.length === 0) {
+    if (!called) {
+      setCalled(true)
       fetchBrokerages()
         .then(bs => {
           setBrokerages(bs)
@@ -30,9 +32,7 @@ export function Memoized() {
           <Box>
             <Grid container justifyContent="center" spacing={4}>
               {brokerages.map((brokerage: BrokerageType) => (
-                <Grid key={brokerage.id} item>
-                  <MemoizedBrokerageCard {...brokerage} onUpdate={handleUpdate} />
-                </Grid>
+                <MemoizedBrokerageCard key={brokerage.id} {...brokerage} onUpdate={handleUpdate} />
               ))}
             </Grid>
           </Box>

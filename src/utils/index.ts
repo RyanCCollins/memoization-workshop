@@ -50,7 +50,7 @@ export const fetchBrokerages = async (first=PAGE_SIZE): Promise<BrokerageType[]>
         imageCache[cacheKey] = logo;
         saveCache(imageCache)
       } else {
-        logo = imageCache[cacheKey];
+        logo = image;
       }
       return {
         ...brokerage,
@@ -62,7 +62,7 @@ export const fetchBrokerages = async (first=PAGE_SIZE): Promise<BrokerageType[]>
           contactsArray[i + 3],
           contactsArray[i + 4],
         ],
-    }
+      }
     })
   )
 };
