@@ -1,4 +1,4 @@
-# Doma Memoization Examples
+# Doma Memoization Examples, aka Domemoize
 
 This code base offers as an example to learn more about React's memoization APIs.
 
