@@ -15,10 +15,6 @@ export function NonMemoized() {
         })
     }
   }, []);
-
-  useEffect(() => {
-    console.log('Brokerages changed: ', brokerages)
-  }, [brokerages])
   
   const handleUpdate = (id: string, value: string) => {
     setBrokerages(brokerages.map((b: BrokerageType) => b.id === id ? { ...b, catchPhrase: value } : b));
@@ -36,7 +32,7 @@ export function NonMemoized() {
     <Profiler
       id="non-memoized"
       onRender={(id, phase, actualDuration, baseDuration) => {
-        // console.table({ id, phase, actualDuration, baseDuration })
+        console.table({ id, phase, actualDuration, baseDuration })
       }}
     >
       <Box>
