@@ -11,7 +11,6 @@ import {
 } from '@mui/material';
 import { CheckCircleOutline, EditOutlined } from '@mui/icons-material';
 import { BrokerageType } from '../../utils';
-import { AnySoaRecord } from 'dns';
 
 interface BrokerageCardProps extends BrokerageType {
   onUpdate: (id: string, value: string) => void;
