@@ -21,10 +21,13 @@ export function Main() {
           1. Install the React Developer Tools and enable "Highlight updates on re-renders". See: <a target="_blank" href="https://medium.com/dev-proto/highlight-react-components-updates-1b2832f2ce48">this document</a>.
         </Typography>
         <Typography>
-          2. Test editing the catch phrase with memoization disabled, notice how slow it is!
+          2. Edit a catch phrase on a brokerage card with memoization disabled, notice how slow it is!
         </Typography>
         <Typography>
-          3. Test editing the catch phrase with memoization enabled and notice how it does not update the brokerage card.
+          3. Edit a catch phrase on a brokerage card with memoization enabled and notice the difference in performance.
+        </Typography>
+        <Typography>
+          3. Open your console to see the `Profiler` data. Play around with the code by adding and removing `useCallbacks`, `useMemo` and `React.memo` to see how it affects the rendering performance.
         </Typography>
       </Box>
       {memoized ? <Memoized /> : <NonMemoized />}
