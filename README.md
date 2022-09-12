@@ -1,6 +1,6 @@
-# Doma Memoization Examples, aka Domemoize
+# Doma Memoization Workshop, aka Domemoize
 
-This code base offers as an example to learn more about React's memoization APIs.
+This code base offers as an example to learn more about React's memoization tools & APIs.
 
 To get started:
 
