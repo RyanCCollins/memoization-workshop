@@ -1,9 +1,8 @@
 # Doma Memoization Workshop, aka Domemoize
 
-This code base offers as an example to learn more about React's memoization tools & APIs.
+This code base offers as an example to learn more about React's memoization tools & APIs and was written to accompany [this article](https://medium.com/p/6ac93c00418c).
 
-To get started:
-
+## Getting Started
 1. Clone the repo
 1. Run `yarn` to install the dependencies
 1. Run `yarn start` to start the development server.
