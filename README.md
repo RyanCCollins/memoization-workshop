@@ -1,5 +1,4 @@
-# Doma Memoization Workshop, aka Domemoize
-
+# Memoization Workshop
 This code base offers as an example to learn more about React's memoization tools & APIs and was written to accompany [this article](https://medium.com/p/6ac93c00418c).
 
 ## Getting Started
